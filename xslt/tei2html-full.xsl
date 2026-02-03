@@ -13,6 +13,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
         <title>Parallellutgave – test</title>
         <link rel="stylesheet" href="assets/site.css"/>
+        <script defer="defer" src="assets/site.js"></script>
       </head>
       <body>
         <h1>Parallellutgave – test</h1>
