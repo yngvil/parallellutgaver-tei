@@ -36,9 +36,6 @@
   --highlight-bg: var(--fersken-60);
   --highlight-outline: var(--plomme);
 
-  /* UI-farger (midlertidige / fallback) */
-  --highlight-bg: #f5f5f5;
-  --highlight-outline: #333;
 }
 
 body {
@@ -95,12 +92,6 @@ section {
 }
 
 /* --- Layout: 3 kolonner (apparat | latin | norsk) --- */
-.row {
-  display: grid;
-  grid-template-columns: 44px 1fr 1fr; /* apparat | latin | norsk */
-  gap: 0.75rem;
-  align-items: start;
-}
 
 .cell.ap {
   display: flex;
@@ -187,6 +178,18 @@ body {
   display: flex;
   justify-content: center;
   padding-top: 0.15rem;
+}
+
+.row {
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.cell.la, .cell.no {
+  padding: 0.2rem 0;
+}
+
+.cell.ap {
+  padding-top: 0.25rem;
 }
 
 
