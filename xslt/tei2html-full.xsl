@@ -43,8 +43,33 @@
   </xsl:template>
 
   <xsl:template match="tei:seg[@xml:lang='la']">
-    <div id="{@xml:id}">
-      <xsl:apply-templates/>
+    <xsl:variable name="id" select="@xml:id"/>
+  
+    <div class="la-block">
+      <div class="seg la-seg" id="{$id}">
+        <xsl:apply-templates/>
+      </div>
+  
+      <!-- Marginalia som peker til denne setningen -->
+      <xsl:variable name="notes"
+        select="//tei:note[@place='margin' and contains(concat(' ', normalize-space(@target), ' '), concat(' #', $id, ' '))]"/>
+  
+      <xsl:if test="exists($notes)">
+        <details class="marg">
+          <summary>Marginalia</summary>
+  
+          <xsl:for-each select="$notes">
+            <div class="marg-item">
+              <div class="marg-la">
+                <xsl:apply-templates select="tei:seg[@xml:lang='la']/node()"/>
+              </div>
+              <div class="marg-no">
+                <xsl:apply-templates select="tei:seg[@xml:lang='no']/node()"/>
+              </div>
+            </div>
+          </xsl:for-each>
+        </details>
+      </xsl:if>
     </div>
   </xsl:template>
 
