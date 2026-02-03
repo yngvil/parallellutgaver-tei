@@ -81,7 +81,7 @@
            href="{concat($nbBase, $pageNum)}"
            target="_blank" rel="noopener"
            title="Åpne faksimile (side {$pageNum})">
-          U+1F4D6;
+          &#128279;
         </a>
       </div>
       <div class="cell la"></div>
