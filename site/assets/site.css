@@ -138,4 +138,42 @@ section {
   border-color: var(--border-accent);
 }
 
+/* --- Sidecontainer --- */
+body {
+  background: var(--bg-main);
+  color: var(--text-main);
+}
+
+.grid3 {
+  max-width: 1100px;
+  margin: 1rem auto;
+  padding: 0 1rem;
+}
+
+/* --- 3-kolonne rader (apparat | latin | norsk) --- */
+.row {
+  display: grid;
+  grid-template-columns: 44px 1fr 1fr;
+  gap: 1rem;
+  align-items: start;
+  padding: 0.35rem 0;
+}
+
+.cell { min-width: 0; } /* viktig for at lange ord ikke sprenger grid */
+.cell.la, .cell.no { line-height: 1.55; }
+
+/* Overskrift-rader skal se ut som seksjonsbrudd */
+.head-row {
+  padding: 1rem 0 0.5rem 0;
+  border-top: 1px solid var(--border-subtle);
+}
+
+.head-row h2 {
+  margin: 0.5rem 0 0.25rem 0;
+  font-family: var(--font-title), var(--fallback-title);
+  color: var(--plomme);
+}
+
+/* Litt luft mellom “blokker” */
+.seg { margin: 0; }
 
