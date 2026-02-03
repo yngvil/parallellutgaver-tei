@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsl:stylesheet version="3.0"
+  xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+  xmlns:tei="http://www.tei-c.org/ns/1.0"
+  exclude-result-prefixes="tei">
+
+  <xsl:output method="html" html-version="5" encoding="UTF-8" indent="yes"/>
+
+  <xsl:template match="/">
+    <html lang="no">
+      <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <title>Parallellutgave – test</title>
+      </head>
+      <body>
+        <h1>Parallellutgave – test</h1>
+
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem;">
+          <section>
+            <h2>Latin</h2>
+            <xsl:apply-templates select="//tei:seg[@xml:lang='la' and starts-with(@xml:id,'la-')]"/>
+          </section>
+
+          <section>
+            <h2>Norsk</h2>
+            <xsl:for-each select="//tei:seg[@xml:lang='la' and starts-with(@xml:id,'la-')]">
+              <xsl:variable name="id" select="@xml:id"/>
+              <div id="no-{$id}">
+                <xsl:for-each select="//tei:seg[@xml:lang='no' and @corresp=concat('#',$id)]">
+                  <div>
+                    <xsl:apply-templates/>
+                  </div>
+                </xsl:for-each>
+              </div>
+            </xsl:for-each>
+          </section>
+        </div>
+      </body>
+    </html>
+  </xsl:template>
+
+  <xsl:template match="tei:seg[@xml:lang='la']">
+    <div id="{@xml:id}">
+      <xsl:apply-templates/>
+    </div>
+  </xsl:template>
+
+  <xsl:template match="text()">
+    <xsl:value-of select="."/>
+  </xsl:template>
+
+</xsl:stylesheet>
