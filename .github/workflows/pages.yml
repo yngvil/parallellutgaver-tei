@@ -32,7 +32,7 @@ jobs:
           cp -R site/assets/* out/assets/ || true
 
           java -cp "tools/*" net.sf.saxon.Transform \
-            -s:tei/presbyterologia.xml \
+            -s:tei/Presbyterologia_Norwegico_Wos-Hardangriana.xml \
             -xsl:xslt/tei2html-full.xsl \
             -o:out/index.html
 
