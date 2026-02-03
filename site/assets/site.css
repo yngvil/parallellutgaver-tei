@@ -9,6 +9,33 @@
   --fallback-body: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   --fallback-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 
+  /* Profilfarger */
+  --aubergine: #40263E;
+  --plomme: #550029;
+  --rose: #FE91B8;
+
+  --fersken: #FFC9C9;
+  --fersken-60: #FFDEDE;
+  --fersken-40: #FFEBEB;
+  --fersken-20: #FDF2F2;
+
+  --hvit: #FFFFFF;
+  --sort: #1A1A1A;
+
+  /* Semantiske UI-farger */
+  --text-main: var(--sort);
+  --text-muted: #555;
+
+  --bg-main: var(--hvit);
+  --bg-soft: var(--fersken-40);
+  --bg-accent: var(--fersken-20);
+
+  --border-subtle: #DDD;
+  --border-accent: var(--plomme);
+
+  --highlight-bg: var(--fersken-60);
+  --highlight-outline: var(--plomme);
+
   /* UI-farger (midlertidige / fallback) */
   --highlight-bg: #f5f5f5;
   --highlight-outline: #333;
