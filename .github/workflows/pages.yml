@@ -21,7 +21,9 @@ jobs:
       - name: Download Saxon-HE
         run: |
           mkdir -p tools
-          curl -L -o tools/saxon-he.jar https://repo1.maven.org/maven2/net/sf/saxon/Saxon-HE/12.4/Saxon-HE-12.4.jar
+          curl -L -o tools/saxon-he.jar https://repo1.maven.org/maven2/net/sf/saxon/Saxon-HE/12.9/Saxon-HE-12.9.jar
+          curl -L -o tools/xmlresolver.jar https://repo1.maven.org/maven2/org/xmlresolver/xmlresolver/6.0.6/xmlresolver-6.0.6.jar
+          curl -L -o tools/xmlresolver-data.jar https://repo1.maven.org/maven2/org/xmlresolver/xmlresolver/6.0.6/xmlresolver-6.0.6-data.jar
 
       - name: Build site
         run: |
@@ -29,7 +31,7 @@ jobs:
           mkdir -p out/assets
           cp -R site/assets/* out/assets/ || true
 
-          java -jar tools/saxon-he.jar \
+          java -cp "tools/*" net.sf.saxon.Transform \
             -s:tei/presbyterologia.xml \
             -xsl:xslt/tei2html-full.xsl \
             -o:out/index.html
