@@ -138,7 +138,18 @@ body {
 /* --- 3-kolonne rader (apparat | latin | norsk) --- */
 
 .cell { min-width: 0; } /* viktig for at lange ord ikke sprenger grid */
-.cell.la, .cell.no { line-height: 1.55; }
+
+/* Vertikale skiller mellom kolonnene */
+.cell.la {
+  border-left: 1px solid var(--border-subtle);
+  padding-left: 0.75rem;
+}
+
+.cell.no {
+  border-left: 1px solid var(--border-subtle);
+  padding-left: 0.75rem;
+}
+
 
 /* Overskrift-rader skal se ut som seksjonsbrudd */
 .head-row {
