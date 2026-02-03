@@ -41,37 +41,55 @@
       </body>
     </html>
   </xsl:template>
-
-  <xsl:template match="tei:seg[@xml:lang='la']">
-    <xsl:variable name="id" select="@xml:id"/>
   
-    <div class="la-block">
+  <xsl:template match="tei:body">
+    <div class="grid3">
+      <xsl:apply-templates
+        select=".//tei:pb
+                | .//tei:head
+                | .//tei:seg[@xml:lang='la' and starts-with(@xml:id,'la-')]"/>
+    </div>
+  </xsl:template>
+
+<xsl:template match="tei:seg[@xml:lang='la' and starts-with(@xml:id,'la-')]">
+  <xsl:variable name="id" select="@xml:id"/>
+
+  <div class="row">
+    <!-- Apparatsøyle (venstre) -->
+    <div class="cell ap">
+      <xsl:variable name="notes"
+        select="//tei:note[@place='margin'
+          and contains(concat(' ', normalize-space(@target), ' '),
+                       concat(' #', $id, ' '))]"/>
+      <xsl:if test="exists($notes)">
+        <button class="note-btn"
+                type="button"
+                data-target="{$id}"
+                title="Marginalia">
+          &#128172;
+        </button>
+      </xsl:if>
+    </div>
+
+    <!-- Latin -->
+    <div class="cell la">
       <div class="seg la-seg" id="{$id}">
         <xsl:apply-templates/>
       </div>
-  
-      <!-- Marginalia som peker til denne setningen -->
-      <xsl:variable name="notes"
-        select="//tei:note[@place='margin' and contains(concat(' ', normalize-space(@target), ' '), concat(' #', $id, ' '))]"/>
-  
-      <xsl:if test="exists($notes)">
-        <details class="marg">
-          <summary>Marginalia</summary>
-  
-          <xsl:for-each select="$notes">
-            <div class="marg-item">
-              <div class="marg-la">
-                <xsl:apply-templates select="tei:seg[@xml:lang='la']/node()"/>
-              </div>
-              <div class="marg-no">
-                <xsl:apply-templates select="tei:seg[@xml:lang='no']/node()"/>
-              </div>
-            </div>
-          </xsl:for-each>
-        </details>
-      </xsl:if>
     </div>
-  </xsl:template>
+
+    <!-- Norsk -->
+    <div class="cell no" id="no-{$id}">
+      <xsl:for-each select="//tei:seg[@xml:lang='no'
+                                     and @corresp = concat('#', $id)]">
+        <div class="seg no-seg">
+          <xsl:apply-templates/>
+        </div>
+      </xsl:for-each>
+    </div>
+  </div>
+</xsl:template>
+
 
   <xsl:template match="text()">
     <xsl:value-of select="."/>
@@ -79,40 +97,35 @@
   
   <xsl:template match="tei:pb">
     <xsl:variable name="f" select="normalize-space(string(@facs))"/>
-  
-    <!-- RIKTIG: \. (ikke \\.) -->
     <xsl:variable name="pageStr" select="replace($f, '.*_([0-9]{4})\.jpg$', '$1')"/>
     <xsl:variable name="pageNum" select="number($pageStr)"/>
   
-    <div class="pb" id="pb-{$pageStr}">
-      <a class="pb-link"
-         href="https://www.nb.no/items/URN:NBN:no-nb_digibok_2015121628005?page={$pageNum}"
-         target="_blank" rel="noopener"
-         title="Åpne faksimile (side {$pageNum})">
-        &#128279;
-      </a>
+    <div class="row pb-row" id="pb-{$pageStr}">
+      <!-- Apparat -->
+      <div class="cell ap">
+        <a class="pb-link"
+           href="https://www.nb.no/items/URN:NBN:no-nb_digibok_2015121628005?page={$pageNum}"
+           target="_blank" rel="noopener"
+           title="Åpne faksimile (side {$pageNum})">
+          &#128279;
+        </a>
+      </div>
+  
+      <!-- Latin -->
+      <div class="cell la"></div>
+  
+      <!-- Norsk -->
+      <div class="cell no"></div>
     </div>
   </xsl:template>
 
-  <xsl:template match="tei:pb">
-    <xsl:variable name="f" select="normalize-space(string(@facs))"/>
-  
-    <!-- Fang de siste 4 sifrene før .jpg (uansett hva som kommer før) -->
-    <xsl:variable name="pageStr" select="replace($f, '.*_([0-9]{4})\.jpg$', '$1')"/>
-  
-    <!-- Hvis regexen ikke matcher, blir pageStr lik hele $f → da er det ikke tall -->
-    <xsl:variable name="pageNum" select="if (matches($pageStr, '^[0-9]{4}$')) then number($pageStr) else ()"/>
-  
-    <div class="pb" id="{if ($pageNum) then concat('pb-', format-number($pageNum,'0000')) else 'pb-unknown'}">
-      <a class="pb-link"
-         href="https://www.nb.no/items/URN:NBN:no-nb_digibok_2015121628005?page={if ($pageNum) then $pageNum else 0}"
-         target="_blank" rel="noopener"
-         title="{if ($pageNum) then concat('Åpne faksimile (side ', $pageNum, ')') else 'Åpne faksimile'}">
-        &#128279;
-      </a>
+  <xsl:template match="tei:head">
+    <div class="row head-row">
+      <div class="cell head" style="grid-column: 1 / -1;">
+        <h2><xsl:apply-templates/></h2>
+      </div>
     </div>
   </xsl:template>
-
 
 
 </xsl:stylesheet>
