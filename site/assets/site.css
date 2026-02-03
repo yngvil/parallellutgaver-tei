@@ -101,13 +101,6 @@ section {
   background: var(--bg-main);
 }
 
-/* --- Layout: 3 kolonner (apparat | latin | norsk) --- */
-
-.cell.ap {
-  display: flex;
-  justify-content: center;
-  padding-top: 0.15rem;
-}
 
 .note-btn {
   border: 1px solid var(--border-subtle);
