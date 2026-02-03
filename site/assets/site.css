@@ -89,11 +89,53 @@ code, pre,
   background: var(--highlight-bg);
 }
 
-
 section {
   border: 1px solid var(--border-subtle);
   background: var(--bg-main);
 }
 
+/* --- Layout: 3 kolonner (apparat | latin | norsk) --- */
+.row {
+  display: grid;
+  grid-template-columns: 44px 1fr 1fr; /* apparat | latin | norsk */
+  gap: 0.75rem;
+  align-items: start;
+}
+
+.cell.ap {
+  display: flex;
+  justify-content: center;
+  padding-top: 0.15rem;
+}
+
+.note-btn {
+  border: 1px solid var(--border-subtle);
+  background: var(--bg-main);
+  border-radius: 8px;
+  padding: 0.25rem 0.35rem;
+  cursor: pointer;
+  opacity: 0.85;
+}
+
+.note-btn:hover {
+  opacity: 1;
+  border-color: var(--border-accent);
+}
+
+/* pb-lenke i margen */
+.pb-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border: 1px solid var(--border-subtle);
+  border-radius: 8px;
+  background: var(--bg-main);
+}
+
+.pb-link:hover {
+  border-color: var(--border-accent);
+}
 
 
