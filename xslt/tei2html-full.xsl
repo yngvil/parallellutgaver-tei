@@ -17,27 +17,7 @@
       </head>
       <body>
         <h1>Parallellutgave – test</h1>
-
-        <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem;">
-          <section>
-            <h2>Latin</h2>
-            <xsl:apply-templates select=".//tei:pb | .//tei:seg[@xml:lang='la' and starts-with(@xml:id,'la-')]"/>
-          </section>
-
-          <section>
-            <h2>Norsk</h2>
-            <xsl:for-each select="//tei:seg[@xml:lang='la' and starts-with(@xml:id,'la-')]">
-              <xsl:variable name="id" select="@xml:id"/>
-              <div id="no-{$id}">
-                <xsl:for-each select="//tei:seg[@xml:lang='no' and @corresp=concat('#',$id)]">
-                  <div>
-                    <xsl:apply-templates/>
-                  </div>
-                </xsl:for-each>
-              </div>
-            </xsl:for-each>
-          </section>
-        </div>
+        <xsl:apply-templates select="//tei:body"/>
       </body>
     </html>
   </xsl:template>
