@@ -1,0 +1,41 @@
+name: Build TEI -> HTML
+
+on:
+  push:
+    branches: ["main"]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: "temurin"
+          java-version: "17"
+
+      - name: Download Saxon-HE
+        run: |
+          mkdir -p tools
+          curl -L -o tools/saxon-he.jar https://repo1.maven.org/maven2/net/sf/saxon/Saxon-HE/12.4/Saxon-HE-12.4.jar
+
+      - name: Build site
+        run: |
+          rm -rf out
+          mkdir -p out/assets
+          cp -R site/assets/* out/assets/ || true
+
+          java -jar tools/saxon-he.jar \
+            -s:tei/presbyterologia.xml \
+            -xsl:xslt/tei2html-full.xsl \
+            -o:out/index.html
+
+      - name: Upload build artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: site-out
+          path: out
