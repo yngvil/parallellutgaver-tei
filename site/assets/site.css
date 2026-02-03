@@ -49,6 +49,17 @@ h1, h2, h3 {
   letter-spacing: 0.2px;
 }
 
+.la-head {
+  font-family: var(--font-title), var(--fallback-title);
+  font-weight: 600;
+  color: var(--plomme);
+}
+
+.no-head {
+  font-family: var(--font-body), var(--fallback-body);
+  font-weight: 500;
+}
+
 .seg {
   font-family: var(--font-body), var(--fallback-body);
 }
