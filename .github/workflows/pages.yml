@@ -44,6 +44,15 @@ jobs:
             -s:tei/Presbyterologia_Norwegico_Wos-Hardangriana.xml \
             -xsl:xslt/tei2html-full.xsl \
             -o:out/index.html
+            
+      - name: Verify out folder
+        run: |
+          echo "=== out tree ==="
+          ls -lah out
+          echo "=== out/assets ==="
+          ls -lah out/assets || true
+          echo "=== first lines of index ==="
+          head -n 5 out/index.html || true
 
       - name: Configure Pages
         uses: actions/configure-pages@v5
