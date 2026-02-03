@@ -3,6 +3,7 @@ h1 { margin-top: 0; }
 section { border: 1px solid #ddd; padding: 0.75rem; border-radius: 8px; }
 div[id^="la-"] { padding: 0.25rem 0; }
 .is-active { outline: 2px solid #333; background: #f5f5f5; }
-.pb { margin: 0.5rem 0; font-size: 0.9rem; opacity: 0.9; }
-.pb a { text-decoration: none; }
-.pb a:hover { text-decoration: underline; }
+.pb { margin: 0.4rem 0; }
+.pb-link { text-decoration: none; font-size: 1.1rem; opacity: 0.8; }
+.pb-link:hover { opacity: 1; }
+
