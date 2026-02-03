@@ -69,12 +69,14 @@ code, pre,
 
 .la-block { margin-bottom: 0.5rem; }
 
-.marg { 
-  margin: 0.2rem 0 0.6rem 0; 
-  padding: 0.3rem 0.5rem; 
-  border: 1px dashed #bbb; 
-  border-radius: 8px; 
+.marg {
+  margin: 0.2rem 0 0.6rem 0;
+  padding: 0.3rem 0.5rem;
+  border: 1px dashed var(--border-accent);
+  background: var(--bg-soft);
+  border-radius: 8px;
 }
+
 .marg summary { cursor: pointer; }
 .marg-item { margin-top: 0.35rem; }
 .marg-la { font-style: italic; }
@@ -87,8 +89,11 @@ code, pre,
   background: var(--highlight-bg);
 }
 
-section { border: 1px solid #ddd; padding: 0.75rem; border-radius: 8px; }
 
+section {
+  border: 1px solid var(--border-subtle);
+  background: var(--bg-main);
+}
 
 
 
