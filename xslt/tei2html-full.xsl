@@ -21,7 +21,7 @@
         <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem;">
           <section>
             <h2>Latin</h2>
-            <xsl:apply-templates select="//tei:seg[@xml:lang='la' and starts-with(@xml:id,'la-')]"/>
+            <xsl:apply-templates select=".//tei:pb | .//tei:seg[@xml:lang='la' and starts-with(@xml:id,'la-')]"/>
           </section>
 
           <section>
