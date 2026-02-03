@@ -52,4 +52,18 @@
     <xsl:value-of select="."/>
   </xsl:template>
 
+  <xsl:template match="tei:pb">
+  <xsl:variable name="f" select="string(@facs)"/>
+  <!-- henter 0005 fra ..._0005.jpg -->
+  <xsl:variable name="pageStr" select="replace($f, '^.*_([0-9]{4})\\.jpg$', '$1')"/>
+  <xsl:variable name="pageNum" select="number($pageStr)"/>
+
+  <div class="pb" id="pb-{$pageStr}">
+    <a href="https://www.nb.no/items/URN:NBN:no-nb_digibok_2015121628005?page={$pageNum}" target="_blank" rel="noopener">
+      Åpne faksimile (side <xsl:value-of select="$pageNum"/>)
+    </a>
+  </div>
+</xsl:template>
+
+
 </xsl:stylesheet>
