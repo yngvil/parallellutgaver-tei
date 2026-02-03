@@ -51,24 +51,42 @@
   <xsl:template match="text()">
     <xsl:value-of select="."/>
   </xsl:template>
-<xsl:template match="tei:pb">
-  <xsl:variable name="f" select="normalize-space(string(@facs))"/>
+  
+  <xsl:template match="tei:pb">
+    <xsl:variable name="f" select="normalize-space(string(@facs))"/>
+  
+    <!-- RIKTIG: \. (ikke \\.) -->
+    <xsl:variable name="pageStr" select="replace($f, '.*_([0-9]{4})\.jpg$', '$1')"/>
+    <xsl:variable name="pageNum" select="number($pageStr)"/>
+  
+    <div class="pb" id="pb-{$pageStr}">
+      <a class="pb-link"
+         href="https://www.nb.no/items/URN:NBN:no-nb_digibok_2015121628005?page={$pageNum}"
+         target="_blank" rel="noopener"
+         title="Åpne faksimile (side {$pageNum})">
+        &#128279;
+      </a>
+    </div>
+  </xsl:template>
 
-  <!-- Fang de siste 4 sifrene før .jpg (uansett hva som kommer før) -->
-  <xsl:variable name="pageStr" select="replace($f, '.*_([0-9]{4})\\.jpg$', '$1')"/>
-
-  <!-- Hvis regexen ikke matcher, blir pageStr lik hele $f → da er det ikke tall -->
-  <xsl:variable name="pageNum" select="if (matches($pageStr, '^[0-9]{4}$')) then number($pageStr) else ()"/>
-
-  <div class="pb" id="{if ($pageNum) then concat('pb-', format-number($pageNum,'0000')) else 'pb-unknown'}">
-    <a class="pb-link"
-       href="https://www.nb.no/items/URN:NBN:no-nb_digibok_2015121628005?page={if ($pageNum) then $pageNum else 0}"
-       target="_blank" rel="noopener"
-       title="{if ($pageNum) then concat('Åpne faksimile (side ', $pageNum, ')') else 'Åpne faksimile'}">
-      &#128279;
-    </a>
-  </div>
-</xsl:template>
+  <xsl:template match="tei:pb">
+    <xsl:variable name="f" select="normalize-space(string(@facs))"/>
+  
+    <!-- Fang de siste 4 sifrene før .jpg (uansett hva som kommer før) -->
+    <xsl:variable name="pageStr" select="replace($f, '.*_([0-9]{4})\.jpg$', '$1')"/>
+  
+    <!-- Hvis regexen ikke matcher, blir pageStr lik hele $f → da er det ikke tall -->
+    <xsl:variable name="pageNum" select="if (matches($pageStr, '^[0-9]{4}$')) then number($pageStr) else ()"/>
+  
+    <div class="pb" id="{if ($pageNum) then concat('pb-', format-number($pageNum,'0000')) else 'pb-unknown'}">
+      <a class="pb-link"
+         href="https://www.nb.no/items/URN:NBN:no-nb_digibok_2015121628005?page={if ($pageNum) then $pageNum else 0}"
+         target="_blank" rel="noopener"
+         title="{if ($pageNum) then concat('Åpne faksimile (side ', $pageNum, ')') else 'Åpne faksimile'}">
+        &#128279;
+      </a>
+    </div>
+  </xsl:template>
 
 
 
