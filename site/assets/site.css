@@ -6,3 +6,9 @@ div[id^="la-"] { padding: 0.25rem 0; }
 .pb { margin: 0.4rem 0; }
 .pb-link { text-decoration: none; font-size: 1.1rem; opacity: 0.85; }
 .pb-link:hover { opacity: 1; }
+.la-block { margin-bottom: 0.5rem; }
+.marg { margin: 0.2rem 0 0.6rem 0; padding: 0.3rem 0.5rem; border: 1px dashed #bbb; border-radius: 8px; }
+.marg summary { cursor: pointer; }
+.marg-item { margin-top: 0.35rem; }
+.marg-la { font-style: italic; }
+.marg-no { margin-top: 0.15rem; }
