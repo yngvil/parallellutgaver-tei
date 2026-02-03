@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Test – parallellutgave</title>
+      </titleStmt>
+      <publicationStmt>
+        <p>Unpublished</p>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Placeholder</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+
+  <text>
+    <body>
+      <p>
+        <seg xml:lang="la" xml:id="la-0001">Salve mundi.</seg>
+        <seg xml:lang="no" corresp="#la-0001"/>
+      </p>
+    </body>
+  </text>
+</TEI>
