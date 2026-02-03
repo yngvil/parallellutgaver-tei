@@ -48,14 +48,26 @@
     <xsl:apply-templates select="node()"/>
   </xsl:template>
 
-  <!-- head: rad som spenner over alle tre kolonner -->
-  <xsl:template match="tei:head">
-    <div class="row head-row">
-      <div class="cell head" style="grid-column: 1 / -1;">
-        <h2><xsl:apply-templates/></h2>
+  <!-- head: kun over en kollonne -->
+<xsl:template match="tei:head">
+  <div class="row head-row">
+    <div class="cell ap"></div>
+
+    <div class="cell la">
+      <div class="seg la-head">
+        <xsl:apply-templates/>
       </div>
     </div>
-  </xsl:template>
+
+    <div class="cell no">
+      <xsl:for-each select="//tei:seg[@xml:lang='no' and @corresp = concat('#', @xml:id)]">
+        <div class="seg no-head">
+          <xsl:apply-templates/>
+        </div>
+      </xsl:for-each>
+    </div>
+  </div>
+</xsl:template>
 
   <!-- pb: rad med lenkeikon i apparatkolonnen -->
   <xsl:template match="tei:pb">
