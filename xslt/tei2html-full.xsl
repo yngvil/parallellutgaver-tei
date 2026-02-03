@@ -26,7 +26,7 @@
 
       <body>
         <header class="site-header">
-          <h1>Parallellutgave – test</h1>
+          <h1>Gert Miltzows Presbyterologia Norwegico Wos-Hardangriana med oversettelse</h1>
         </header>
 
         <!-- Render TEI body (layout bygges i tei:body-templaten) -->
