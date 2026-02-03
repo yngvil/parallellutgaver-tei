@@ -1,10 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet version="3.0"
   xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+  xmlns:tei="http://www.tei-c.org/ns/1.0"
   xmlns:xs="http://www.w3.org/2001/XMLSchema"
   exclude-result-prefixes="tei xs">
-  
+
   <xsl:output method="html" html-version="5" encoding="UTF-8" indent="yes"/>
+
+  <!-- NB base URL -->
+  <xsl:param name="nbBase" as="xs:string"
+    select="'https://www.nb.no/items/URN:NBN:no-nb_digibok_2015121628005?page='"/>
+
 
   <!-- ========== ROOT ========== -->
   <xsl:template match="/">
