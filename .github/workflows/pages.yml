@@ -1,9 +1,10 @@
 name: Build TEI -> HTML
 
 on:
+  workflow_dispatch:
   push:
     branches: ["main"]
-  workflow_dispatch:
+
 
 jobs:
   build:
