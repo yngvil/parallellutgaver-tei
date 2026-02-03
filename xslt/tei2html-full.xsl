@@ -12,6 +12,7 @@
         <meta charset="utf-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
         <title>Parallellutgave – test</title>
+        <link rel="stylesheet" href="assets/site.css"/>
       </head>
       <body>
         <h1>Parallellutgave – test</h1>
