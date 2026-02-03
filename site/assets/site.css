@@ -1,14 +1,67 @@
-body { font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; margin: 0; padding: 1rem; }
-h1 { margin-top: 0; }
-section { border: 1px solid #ddd; padding: 0.75rem; border-radius: 8px; }
-div[id^="la-"] { padding: 0.25rem 0; }
-.is-active { outline: 2px solid #333; background: #f5f5f5; }
+:root {
+  /* Profilnavn (kun brukt hvis fonten finnes lokalt/web) */
+  --font-title: "ITC Clearface Std";
+  --font-body: "STK Bureau Sans";
+  --font-mono: "STK Gerhard";
+
+  /* Fallback stacks (alltid tilgjengelig) */
+  --fallback-title: ui-serif, Georgia, "Times New Roman", Times, serif;
+  --fallback-body: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --fallback-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+
+  /* UI-farger (midlertidige / fallback) */
+  --highlight-bg: #f5f5f5;
+  --highlight-outline: #333;
+}
+
+body {
+  font-family: var(--font-body), var(--fallback-body);
+  line-height: 1.55;
+}
+
+h1, h2, h3 {
+  font-family: var(--font-title), var(--fallback-title);
+  font-weight: 600;
+  letter-spacing: 0.2px;
+}
+
+.seg {
+  font-family: var(--font-body), var(--fallback-body);
+}
+
+.pb-link,
+.pb-debug,
+code, pre,
+.mono, .id {
+  font-family: var(--font-mono), var(--fallback-mono);
+}
+
 .pb { margin: 0.4rem 0; }
 .pb-link { text-decoration: none; font-size: 1.1rem; opacity: 0.85; }
 .pb-link:hover { opacity: 1; }
+
 .la-block { margin-bottom: 0.5rem; }
-.marg { margin: 0.2rem 0 0.6rem 0; padding: 0.3rem 0.5rem; border: 1px dashed #bbb; border-radius: 8px; }
+
+.marg { 
+  margin: 0.2rem 0 0.6rem 0; 
+  padding: 0.3rem 0.5rem; 
+  border: 1px dashed #bbb; 
+  border-radius: 8px; 
+}
 .marg summary { cursor: pointer; }
 .marg-item { margin-top: 0.35rem; }
 .marg-la { font-style: italic; }
 .marg-no { margin-top: 0.15rem; }
+
+.seg.la-seg { padding: 0.25rem 0; }
+
+.is-active {
+  outline: 2px solid var(--highlight-outline);
+  background: var(--highlight-bg);
+}
+
+section { border: 1px solid #ddd; padding: 0.75rem; border-radius: 8px; }
+
+
+
+
