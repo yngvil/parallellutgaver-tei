@@ -41,7 +41,7 @@ jobs:
           cp -R site/assets/* out/assets/ || true
 
           java -cp "tools/*" net.sf.saxon.Transform \
-            -s:tei/Presbyterologia_Norwegico_Wos-Hardangriana.xml \
+            -s:tei/Presbyterologia.xml \
             -xsl:xslt/tei2html-full.xsl \
             -o:out/index.html
             
