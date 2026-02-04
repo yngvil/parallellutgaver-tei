@@ -48,9 +48,9 @@ h1, h2, h3 {
   letter-spacing: 0.2px;
 }
 
+.la-head, .no-head { margin: 0; padding: 0; }
+
 .la-head .no-head {
-  margin: 0;
-  padding: 0;
   font-family: var(--font-title), var(--fallback-title);
   font-weight: 600;
   color: var(--plomme);
