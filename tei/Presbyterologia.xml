@@ -7,11 +7,11 @@
 		<pb facs="no-nb_digibok_2015121628005_0004.jpg"/>
 		<pb facs="no-nb_digibok_2015121628005_0005.jpg"/>
 		<p><seg xml:lang="la" xml:id="la-0001">ZACHAR. VI, 8. Ecce, qvi egrediuntur in terram Aqvilonis, reqviescere fecerunt Spiritum meum in terrâ Aqvilonis.</seg>
-<seg xml:lang="no" corresp="#la-0001"> Sakarja 6,8.</seg>
+<seg xml:lang="no" corresp="#la-0001">Sakarja 6,8.</seg>
 <seg xml:lang="no" corresp="#la-0001">Se, de som går ut mot nordens land har stilnet min Ånd i nordens land.</seg>
 		</p>
 <seg xml:lang="la" xml:id="la-0002"><head>PRESBYTEROLOGIA NORWEGICO WOS-HARDANGRIANA,  Ex Variis &amp; vetustis hinc inde cum curâ observatis &amp; conqvisitis monumentis, membranis, Chartis, Schedis, Adversariis &amp; MSSis, prout haberi potest, eruta &amp; adornata à GERARDO HEINRICI FIL. MILZOVIO. MATTH. XXIV, 14. Prædicabitur Euangelium regni in universo orbe, in testimonium omnibus gentibus : Et TUNC veniet FINIS. HAFNIÆ, Literis Reg. Majest. &amp; Univ. Typogr. Cornificii Luft. Anno 1679.</head></seg>
-<seg xml:lang="no" corresp="#la-0002">Norsk prestekrønike over Voss og Hardanger.</seg>
+<seg xml:lang="no" corresp="#la-0002"><head>Norsk prestekrønike over Voss og Hardanger.</head></seg>
 <seg xml:lang="no" corresp="#la-0002">Utarbeidet og sammenstilt av Gjert Henrikssøn Miltzow, så langt det lar seg gjøre, fra forskjellige oldtidsminner, pergamenter, papirer, dokumenter, regnskapsbøker og manuskripter som er erhvervet rundt omkring og gjennomgått med flid. </seg>
 <seg xml:lang="no" corresp="#la-0002"> Matteus 24, 14.</seg> 
 <seg xml:lang="no" corresp="#la-0002">Riket skal forkynnes i hele verden, til vitnesbyrd for folkeslagene.</seg>
@@ -25,31 +25,31 @@
 			<seg xml:lang="la" xml:id="la-0004">Cui defectui, si possibile, supplendo, adjuvandoque tempestas relinqvitur subseqvutura.</seg>
 <seg xml:lang="no" corresp="#la-0004">Å utfylle og avhjelpe denne mangel, hvis det er mulig, overlates til fremtiden.</seg>
 			<seg xml:lang="la" xml:id="la-00XX">Mihi satis erit glaciem fregisse, &amp; viam qvodammodo, licèt nec hoc sine labore, successoribus monstrâsse, non tamen alio fine, qvàm ut cœpta faciliùs cum Deo &amp; die perficeretur tela, meæque in Dominos antecessores &amp; alios qvi de Ecclesiâ patriâ benè meruerunt observantiæ documentum exstaret qvalecunqve.</seg>
-<seg xml:lang="no" corresp="#la-00XX">For meg vil det være tilstrekkelig å ha brutt isen og på en måte ha vist veien for mine etterfølgere, skjønt ikke uten strev.</seg>
-<seg xml:lang="no" corresp="#la-00XX">Dette har ikke hatt noen annen hensikt enn at det begynte arbeidet omsider, med Guds hjelp, lettere kunne ferdigstilles og at det skal finnes et dokument som vitner om min ærbødighed for mine forgjengere og andre fortjenstfulle menn i fedrelandets kirke.</seg>  
-<seg xml:lang="la" xml:id="la-00XX">Et, si possem, levidensi hac chartâ, cæteris inter nos Dominis Antistitibus, tam Urbicis, qvàm Ruralibus suo loco, in hoc genere majora, vel saltem paria tentandi calcar addere, est qvod vellem.</seg>
-<seg xml:lang="no" corresp="#la-00XX"> Og, hvis jeg kunne, ville jeg ved dette lille skrift oppfordre de øvrige prester, både i byen og på landet, til på hvert sitt sted å komme lenger eller i det minste like langt innenfor samme sjanger.</seg>
-<seg xml:lang="la" xml:id="la-00XX">De cœtero, B. L. te non detineo, sed Deo ejusqve potenti gratiæ commendo, qvæ nos ædificare, &amp; hæreditatem nobis cum Sanctis dare potest, &amp; ut velit, ex animo precor.</seg>
-<seg xml:lang="no" corresp="#la-00XX">Forøvrig, kjære leser, vil jeg ikke oppholde deg, men jeg anbefaler deg til Gud og Hans store nåde, som jeg ber skal oppbygge oss og gi oss arvelodd med de Hellige slik Han kan.</seg>
-<seg xml:lang="la" xml:id="la-00XX">Dabam in sede pastorali Wossensium <hi rend="bold">Wanaen</hi> / Orbis Arctoi, d. I9. Decembr. An, MDCLXXVIII. G. H. Milzovius:</seg>
-<seg xml:lang="no" corresp="#la-00XX">Jeg skrev dette på prestegården på Vossevangen, i Bjørnens stjernebilde, 19. desember 1678.</seg>
-<seg xml:lang="no" corresp="#la-00XX">G. H. Miltzow.</seg>
+<seg xml:lang="no" corresp="#la-0004">For meg vil det være tilstrekkelig å ha brutt isen og på en måte ha vist veien for mine etterfølgere, skjønt ikke uten strev.</seg>
+<seg xml:lang="no" corresp="#la-0004">Dette har ikke hatt noen annen hensikt enn at det begynte arbeidet omsider, med Guds hjelp, lettere kunne ferdigstilles og at det skal finnes et dokument som vitner om min ærbødighed for mine forgjengere og andre fortjenstfulle menn i fedrelandets kirke.</seg>  
+<seg xml:lang="la" xml:id="la-0005">Et, si possem, levidensi hac chartâ, cæteris inter nos Dominis Antistitibus, tam Urbicis, qvàm Ruralibus suo loco, in hoc genere majora, vel saltem paria tentandi calcar addere, est qvod vellem.</seg>
+<seg xml:lang="no" corresp="#la-0005"> Og, hvis jeg kunne, ville jeg ved dette lille skrift oppfordre de øvrige prester, både i byen og på landet, til på hvert sitt sted å komme lenger eller i det minste like langt innenfor samme sjanger.</seg>
+<seg xml:lang="la" xml:id="la-0006">De cœtero, B. L. te non detineo, sed Deo ejusqve potenti gratiæ commendo, qvæ nos ædificare, &amp; hæreditatem nobis cum Sanctis dare potest, &amp; ut velit, ex animo precor.</seg>
+<seg xml:lang="no" corresp="#la-0006">Forøvrig, kjære leser, vil jeg ikke oppholde deg, men jeg anbefaler deg til Gud og Hans store nåde, som jeg ber skal oppbygge oss og gi oss arvelodd med de Hellige slik Han kan.</seg>
+<seg xml:lang="la" xml:id="la-0007">Dabam in sede pastorali Wossensium <hi rend="bold">Wanaen</hi> / Orbis Arctoi, d. I9. Decembr. An, MDCLXXVIII. G. H. Milzovius:</seg>
+<seg xml:lang="no" corresp="#la-0007">Jeg skrev dette på prestegården på Vossevangen, i Bjørnens stjernebilde, 19. desember 1678.</seg>
+<seg xml:lang="no" corresp="#la-0007">G. H. Miltzow.</seg>
 		</p>
 
 		<pb n="1" facs="no-nb_digibok_2015121628005_0007.jpg"/>
-<seg xml:lang="la" xml:id="la-00XX"><head>IN NOMINE JESU</head></seg>
-<seg xml:lang="no" corresp="#la-00XX">I Jesu navn</seg>		
+<seg xml:lang="la" xml:id="la-0009"><head>IN NOMINE JESU</head></seg>
+<seg xml:lang="no" corresp="#la-0009"><head>I Jesu navn</head></seg>		
 		<p>
-			<seg xml:lang="la" xml:id="la-00XX">Qvamvis hoc loco aliud nihil, qvàm Catalogum patriæ meæ Ecclesiæ Doctorum sacrorumque Antistitum qvalemcunque literis comprehendere in animum induxerim, placebit tamen aliqvantulum de ejusdem Ecclesiæ situ, tempore, templis, aliisque huc pertinentibus circumstantiis, majoris evidentiæ &amp; melioris cognitionis gratiâ tanqvam mediocri præfatione, lectoris benevolentiâ &amp; humanitate fretus commemorare.</seg>
-<seg xml:lang="no" corresp="#la-00XX">Selv om jeg her ikke har hatt annen henikt enn å forfatte en liste over lærere og prester ved mitt fødesteds kirke, vil jeg for klarhetens og forståelsens skyld likevel, i tillitt til leserens gode vilje og vennlighet, ved en liten fortale si noe om den samme kirkes beliggenhet, alder, kirkebygg og andre relevante omstendigheter.</seg>
-			<seg xml:lang="la" xml:id="la-00XX">WOSSEA vel WOSSIA vulgò <hi rend="bold">Wos, Waas</hi> seu <hi rend="bold">Wors</hi>, ut in vetustis chartis &amp; codicibus reperitur, (an, per contractionem qvasi <hi rend="bold">Waß-Aaß</hi>, id est locus qvidam editior inter aqvas seu ab aqvis situs, plurimis insuper lacubus, stagnis fluviisque &amp; amnibus scatens; qvos tamen oportunis temporibus negotio minùs difficili iter facientibus, qvorsum discupiunt, transire licet: vel à viro qvodam ejusdem nominis: vel à grandi illo fluvio <hi rend="bold">Woße-Elfven, Worsa</hi> antiqvis monumentis dicto, per mediam Wosseam ab Oriente in Occidentem labente: vel denique ab antiqva illa Norvagica dictione <hi rend="bold">Woor</hi>, qvæ cibum notat; qvia prisco forsan seculo sedes hæc frugifera fuit, cultoribus suis rei satis superque cibariæ pro labore restituens, ita denominetur, eqvidem pro certo qvod affirmem, vix habeo,) tractus est in Diæcesi Bergensi maximam partem montanus, habens circum se sitas ab Euroaqvilone Præfecturas Sognensem &amp; Waldrensem, ab Oriente Hallingdal, ab Euronoto &amp; Austro Hardangriam, ab Africo Bergas insulamque Ostroënsem, a Septentrione Sundfiordiam &amp;c.</seg>
-<seg xml:lang="no" corresp="#la-00XX">Voss, på folkespråket Voss, Vaas eller Vors, slik det finnes nevnt i gamle papirer og manuskripter, er et område i Bergen bispedømme, for det meste dekket med fjell, som er omringet av landskapene Sogn og Valdres i nordøst, Hallingdal i øst, i sørøst og sør Hardanger, i vest Bergen og Osterøy, i nord Sunnfjord osv.</seg>
-<seg xml:lang="no" corresp="#la-00XX">Jeg har knapt noe som jeg bestemt kan fastslå om stedsnavnets opprinnelse.</seg>
-<seg xml:lang="no" corresp="#la-00XX">Det kan komme fra en sammentrekning av Vass-Ås, det vil si et høyt sted mellom eller ved siden av vann som springer frem over mange innsjøer, myrer, elver og bekker, hvilke ved rette tid lett kan forbipasseres av de reisende, hvorenn de ønsker å dra.</seg>
-<seg xml:lang="no" corresp="#la-00XX">Det kan også komme av en mann med samme navn eller av den store Vosseelven, kaldt Vorsa i oldtidssaker, som løper midt gjennom Voss fra øst til vest.</seg>
-<seg xml:lang="no" corresp="#la-00XX">Til sist kan det komme fra det gamle norske ordet Voor, som betyr "mat", ettersom dette stedet i den første tid var svært fruktbart og ga bøndene mer enn nok føde igjen for arbeidet deres.</seg>  
+			<seg xml:lang="la" xml:id="la-0010">Qvamvis hoc loco aliud nihil, qvàm Catalogum patriæ meæ Ecclesiæ Doctorum sacrorumque Antistitum qvalemcunque literis comprehendere in animum induxerim, placebit tamen aliqvantulum de ejusdem Ecclesiæ situ, tempore, templis, aliisque huc pertinentibus circumstantiis, majoris evidentiæ &amp; melioris cognitionis gratiâ tanqvam mediocri præfatione, lectoris benevolentiâ &amp; humanitate fretus commemorare.</seg>
+<seg xml:lang="no" corresp="#la-0010">Selv om jeg her ikke har hatt annen henikt enn å forfatte en liste over lærere og prester ved mitt fødesteds kirke, vil jeg for klarhetens og forståelsens skyld likevel, i tillitt til leserens gode vilje og vennlighet, ved en liten fortale si noe om den samme kirkes beliggenhet, alder, kirkebygg og andre relevante omstendigheter.</seg>
+			<seg xml:lang="la" xml:id="la-0011">WOSSEA vel WOSSIA vulgò <hi rend="bold">Wos, Waas</hi> seu <hi rend="bold">Wors</hi>, ut in vetustis chartis &amp; codicibus reperitur, (an, per contractionem qvasi <hi rend="bold">Waß-Aaß</hi>, id est locus qvidam editior inter aqvas seu ab aqvis situs, plurimis insuper lacubus, stagnis fluviisque &amp; amnibus scatens; qvos tamen oportunis temporibus negotio minùs difficili iter facientibus, qvorsum discupiunt, transire licet: vel à viro qvodam ejusdem nominis: vel à grandi illo fluvio <hi rend="bold">Woße-Elfven, Worsa</hi> antiqvis monumentis dicto, per mediam Wosseam ab Oriente in Occidentem labente: vel denique ab antiqva illa Norvagica dictione <hi rend="bold">Woor</hi>, qvæ cibum notat; qvia prisco forsan seculo sedes hæc frugifera fuit, cultoribus suis rei satis superque cibariæ pro labore restituens, ita denominetur, eqvidem pro certo qvod affirmem, vix habeo,) tractus est in Diæcesi Bergensi maximam partem montanus, habens circum se sitas ab Euroaqvilone Præfecturas Sognensem &amp; Waldrensem, ab Oriente Hallingdal, ab Euronoto &amp; Austro Hardangriam, ab Africo Bergas insulamque Ostroënsem, a Septentrione Sundfiordiam &amp;c.</seg>
+<seg xml:lang="no" corresp="#la-0011">Voss, på folkespråket Voss, Vaas eller Vors, slik det finnes nevnt i gamle papirer og manuskripter, er et område i Bergen bispedømme, for det meste dekket med fjell, som er omringet av landskapene Sogn og Valdres i nordøst, Hallingdal i øst, i sørøst og sør Hardanger, i vest Bergen og Osterøy, i nord Sunnfjord osv.</seg>
+<seg xml:lang="no" corresp="#la-0011">Jeg har knapt noe som jeg bestemt kan fastslå om stedsnavnets opprinnelse.</seg>
+<seg xml:lang="no" corresp="#la-0011">Det kan komme fra en sammentrekning av Vass-Ås, det vil si et høyt sted mellom eller ved siden av vann som springer frem over mange innsjøer, myrer, elver og bekker, hvilke ved rette tid lett kan forbipasseres av de reisende, hvorenn de ønsker å dra.</seg>
+<seg xml:lang="no" corresp="#la-0011">Det kan også komme av en mann med samme navn eller av den store Vosseelven, kaldt Vorsa i oldtidssaker, som løper midt gjennom Voss fra øst til vest.</seg>
+<seg xml:lang="no" corresp="#la-0011">Til sist kan det komme fra det gamle norske ordet Voor, som betyr "mat", ettersom dette stedet i den første tid var svært fruktbart og ga bøndene mer enn nok føde igjen for arbeidet deres.</seg>  
 		</p>
-		<note place="margin" type="authorial" target="#la-00XX">
+		<note place="margin" type="authorial" target="#la-0011">
   			<seg xml:lang="la">Wosseæ appellatio &amp; Situs.</seg>
   			<seg xml:lang="no">Voss' navn og beliggenhet</seg>
 		</note>
