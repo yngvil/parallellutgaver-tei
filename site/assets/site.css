@@ -48,15 +48,12 @@ h1, h2, h3 {
   letter-spacing: 0.2px;
 }
 
-.la-head {
+.la-head .no-head {
+  margin: 0;
+  padding: 0;
   font-family: var(--font-title), var(--fallback-title);
   font-weight: 600;
   color: var(--plomme);
-}
-
-.no-head {
-  font-family: var(--font-body), var(--fallback-body);
-  font-weight: 500;
 }
 
 .seg {
@@ -100,7 +97,6 @@ section {
   border: 1px solid var(--border-subtle);
   background: var(--bg-main);
 }
-
 
 .note-btn {
   border: 1px solid var(--border-subtle);
